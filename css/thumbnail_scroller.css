@@ -1,0 +1,82 @@
+* { 
+  font-family: arial, helvetica;
+}
+
+body {
+  background: #fff;
+}
+
+#thumbnailScroller {
+  width: 695px;
+  position: relative;
+  top: 0;
+}
+
+#thumbnailScroller .pageLeft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/page_left.gif) no-repeat top left;
+  overflow: hidden;
+  width: 23px;
+  height: 90px;
+}
+
+#thumbnailScroller .pageRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../images/page_right.gif) no-repeat top left;
+  width: 23px;
+  height: 90px;
+  overflow: hidden;
+}
+
+#thumbnailScroller .pageRight a,
+#thumbnailScroller .pageLeft a {
+  padding: 90px 23px 0 0;
+  display: block;
+}
+
+#thumbnailScroller .itemsContainer {
+  position: absolute;
+  top: 3px;
+  left: 51px;
+  width: 590px;
+  height: 88px;
+  overflow: hidden;
+}
+
+#thumbnailScroller .itemsContainer .items {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 1000px;
+}
+
+#thumbnailScroller .itemsContainer .items li {
+  float: left;
+  list-style: none;
+  width: 77px;
+  height: 90px;
+  overflow: hidden;
+  background: url(../images/bg_thumbnail.gif) no-repeat top left;
+  font-size: 0.6em;
+  line-height: 0.9em;
+  margin: 0 24px 0 0;
+}
+#thumbnailScroller .itemsContainer .items li img {
+  margin: 4px 4px 0 4px;
+  padding: 0;
+  display: inline;
+}
+#thumbnailScroller .itemsContainer .items li .title {
+  display: block;
+  color: 999;
+  padding: 2px 0 1px 4px;
+  margin: 0 5px;
+  width: 64px;
+  background: #fff;
+}
